@@ -91,6 +91,28 @@ Unfinished, unoptimized and not fully functional ugly demo weapon paints plugin 
 - Basic website
 - Steam login/logout
 - Change knife, paint, seed and wear
+(website was deleted by the evil tem guy, you wont need it anyway)
+
+## Gen codes
+see `css_gen` and `css_applypainto`
+
+`css_gen 279 661 0.0109 1 awp`
+`css_applypainto tem 279 661 0.033 1 awp`
+279 is the paint code for Asiimov awp paint
+661 is the pattern
+that one is float
+1 for stattrack enabled
+awp for a partial weapon def name, could actually be any weapon, but the paint will look funny
+if weapon def is not selected, the active player weapon will be used instead
+
+could also do knifes `css_applypainto tem 582 3 0.06 0 stiletto`
+
+if the paint doesn apply you could try a different pattern
+
+you can reset back to its original value by settink the paint code to 0
+
+lil note for developers that like hotreloading like i do:
+when hotreloading, the plugin seems to forget the original skin of a weapon dat sum player had originally and setting the paint code to 0 trying to reset it after a hotreload will not result in anytin - have to restart the server
 
 ## Troubleshooting
 <details>
